@@ -11,6 +11,8 @@
 ![Language](https://img.shields.io/badge/translation-EN%20%E2%87%84%20%E4%B8%AD%E6%96%87-4c8bf5)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
+**快速安装:** `npx skills add dingdinglz/paper-annotated-html`
+
 ![效果总览](docs/images/hero.png)
 
 </div>
@@ -61,6 +63,22 @@
 </details>
 
 ## 安装
+
+### 一行命令安装（推荐）
+
+使用 [`skills`](https://github.com/vercel-labs/skills) CLI 安装，支持 Claude Code、Codex、Cursor 等支持 Agent Skills 的工具：
+
+```bash
+# 全局（用户级）安装到 Claude Code
+npx skills add dingdinglz/paper-annotated-html -g -a claude-code
+
+# 项目级安装，CLI 会询问要安装到哪些 agent
+npx skills add dingdinglz/paper-annotated-html
+```
+
+之后可以用 `npx skills update paper-annotated-html` 更新，用 `npx skills remove paper-annotated-html` 卸载。
+
+### 手动安装（git clone）
 
 仓库根目录就是 skill 本身，直接 clone 到 skills 目录即可：
 

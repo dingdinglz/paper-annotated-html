@@ -11,6 +11,8 @@ English | [简体中文](README.zh-CN.md)
 ![Language](https://img.shields.io/badge/translation-EN%20%E2%87%84%20%E4%B8%AD%E6%96%87-4c8bf5)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
+**Quick install:** `npx skills add dingdinglz/paper-annotated-html`
+
 ![Hero](docs/images/hero.png)
 
 </div>
@@ -73,7 +75,24 @@ a paper critically instead of just skimming it.
 
 ## Installation
 
-Clone the repo into your skills directory. The repo root *is* the skill.
+### One command (recommended)
+
+Install with the [`skills`](https://github.com/vercel-labs/skills) CLI. It works with Claude Code, Codex, Cursor
+and other agents that support Agent Skills:
+
+```bash
+# Global (user-level) install for Claude Code
+npx skills add dingdinglz/paper-annotated-html -g -a claude-code
+
+# Project-level install; the CLI asks which agents to install for
+npx skills add dingdinglz/paper-annotated-html
+```
+
+Update later with `npx skills update paper-annotated-html`, and remove it with `npx skills remove paper-annotated-html`.
+
+### Manual (git clone)
+
+The repo root *is* the skill, so you can clone it straight into your skills directory:
 
 ```bash
 # Personal skill (available in every project)
